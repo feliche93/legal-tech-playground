@@ -3,7 +3,7 @@ import pathlib
 
 cwd = pathlib.Path.cwd()
 
-file_path = cwd.parent / 'data' / 'Search results 20230821.csv'
+file_path = cwd.parent / 'data' / 'searchresults_excel.xlsx'
 
 df = pd.read_csv(file_path.as_posix(), 
                  #on_bad_lines="warn"
