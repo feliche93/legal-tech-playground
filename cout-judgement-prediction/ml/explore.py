@@ -5,12 +5,12 @@ cwd = pathlib.Path.cwd()
 
 file_path = cwd.parent / 'data' / 'searchresults_excel.xlsx'
 
-df = pd.read_csv(file_path.as_posix(), 
-                 #on_bad_lines="warn"
-                 )
+df = pd.read_csv(
+    file_path.as_posix(),
+    # on_bad_lines="warn"
+)
 
 target_columns = [
-
     "Date of document",
     "Date lodged",
     "Type of procedure",
