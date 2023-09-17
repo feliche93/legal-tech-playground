@@ -3,4 +3,4 @@ pendulum
 pandas
 beautifulsoup4
 streamlit
-
+pycaret[full]

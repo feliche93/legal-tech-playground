@@ -1,7 +1,7 @@
-import streamlit as st
-from ml.explore import get_df
 from pathlib import Path
+
 import pandas as pd
+import streamlit as st
 
 """
 # Court Judgement Prediction 🤖
