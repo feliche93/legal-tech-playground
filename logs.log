@@ -1,0 +1,42 @@
+2023-09-18 21:57:04,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:04,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:04,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:04,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:21,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:21,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:21,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:57:21,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 21:59:36,491:INFO:Initializing load_model()
+2023-09-18 21:59:36,492:INFO:load_model(model_name=best_pipeline, platform=None, authentication=None, verbose=True)
+2023-09-18 22:00:08,483:INFO:Initializing load_model()
+2023-09-18 22:00:08,483:INFO:load_model(model_name=./best_pipeline, platform=None, authentication=None, verbose=True)
+2023-09-18 22:00:43,951:INFO:Initializing load_model()
+2023-09-18 22:00:43,951:INFO:load_model(model_name=/Users/felixvemmer/Developer/court-judgement-prediction/cout-judgement-prediction/ml/best_pipeline, platform=None, authentication=None, verbose=True)
+2023-09-18 22:00:44,205:INFO:Initializing predict_model()
+2023-09-18 22:00:44,205:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x17fd57820>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['application_date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=TargetEncoder(cols=['subject_matter'],
+                                                              handle_missing='return_nan'))),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d982f70>)
+2023-09-18 22:00:44,205:INFO:Checking exceptions
+2023-09-18 22:00:44,205:INFO:Preloading libraries
+2023-09-18 22:00:44,205:INFO:Set up data.
+2023-09-18 22:00:44,206:INFO:Set up index.

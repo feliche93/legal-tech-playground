@@ -8,7 +8,7 @@ s = RegressionExperiment()
 
 cwd = pathlib.Path.cwd()
 
-file_path = cwd.parent / 'data' / 'eug_judgments_raw.csv'
+file_path = cwd / 'cout-judgement-prediction' / 'data' / 'eug_judgments_raw.csv'
 
 df = pd.read_csv(
     file_path.as_posix(),
@@ -38,8 +38,9 @@ predict_df = pd.DataFrame(
 
 predict_df['application_date'] = pd.to_datetime(predict_df['application_date'])
 
+model_file_path = cwd / 'cout-judgement-prediction' / 'ml' / 'best_pipeline'
 
-final_best = s.load_model('best_pipeline')
+final_best = s.load_model(model_file_path.as_posix())
 
 prediction = s.predict_model(final_best, predict_df)
 
