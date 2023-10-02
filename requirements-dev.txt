@@ -32,13 +32,17 @@ comm==0.1.4
     #   -c requirements.txt
     #   ipykernel
 debugpy==1.8.0
-    # via ipykernel
+    # via
+    #   -c requirements.txt
+    #   ipykernel
 decorator==5.1.1
     # via
     #   -c requirements.txt
     #   ipython
 dill==0.3.7
-    # via pylint
+    # via
+    #   -c requirements.txt
+    #   pylint
 distlib==0.3.7
     # via virtualenv
 executing==1.2.0
@@ -46,7 +50,9 @@ executing==1.2.0
     #   -c requirements.txt
     #   stack-data
 filelock==3.12.4
-    # via virtualenv
+    # via
+    #   -c requirements.txt
+    #   virtualenv
 flake8==6.1.0
     # via -r requirements-dev.in
 identify==2.5.28
@@ -56,7 +62,9 @@ importlib-metadata==6.8.0
     #   -c requirements.txt
     #   jupyter-client
 ipykernel==6.25.2
-    # via -r requirements-dev.in
+    # via
+    #   -c requirements.txt
+    #   -r requirements-dev.in
 ipython==8.12.2
     # via
     #   -c requirements.txt
@@ -70,7 +78,9 @@ jedi==0.19.0
     #   -c requirements.txt
     #   ipython
 jupyter-client==8.3.1
-    # via ipykernel
+    # via
+    #   -c requirements.txt
+    #   ipykernel
 jupyter-core==5.3.1
     # via
     #   -c requirements.txt
@@ -158,9 +168,12 @@ python-dateutil==2.8.2
     #   -c requirements.txt
     #   jupyter-client
 pyyaml==6.0.1
-    # via pre-commit
+    # via
+    #   -c requirements.txt
+    #   pre-commit
 pyzmq==25.1.1
     # via
+    #   -c requirements.txt
     #   ipykernel
     #   jupyter-client
 six==1.16.0
@@ -174,6 +187,7 @@ stack-data==0.6.2
     #   ipython
 tomli==2.0.1
     # via
+    #   -c requirements.txt
     #   black
     #   mypy
     #   pylint

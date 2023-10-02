@@ -4,3 +4,7 @@ pandas
 beautifulsoup4
 streamlit
 pycaret[full]
+ipyvizzu
+bar_chart_race
+plotly 
+plotly-express
