@@ -40,3 +40,77 @@
 2023-09-18 22:00:44,205:INFO:Preloading libraries
 2023-09-18 22:00:44,205:INFO:Set up data.
 2023-09-18 22:00:44,206:INFO:Set up index.
+2023-10-07 12:28:43,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-07 12:28:43,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-07 12:28:43,956:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-07 12:28:43,956:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-07 12:30:49,219:INFO:Initializing load_model()
+2023-10-07 12:30:49,219:INFO:load_model(model_name=/Users/felixvemmer/Developer/court-judgement-prediction/cout-judgement-prediction/ml/best_pipeline, platform=None, authentication=None, verbose=True)
+2023-10-07 12:30:49,676:INFO:Initializing predict_model()
+2023-10-07 12:30:49,676:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x2b33f1d60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['application_date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=TargetEncoder(cols=['subject_matter'],
+                                                              handle_missing='return_nan'))),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x282373f70>)
+2023-10-07 12:30:49,676:INFO:Checking exceptions
+2023-10-07 12:30:49,676:INFO:Preloading libraries
+2023-10-07 12:30:49,676:INFO:Set up data.
+2023-10-07 12:30:49,679:INFO:Set up index.
+2023-10-07 12:30:58,878:INFO:Initializing load_model()
+2023-10-07 12:30:58,878:INFO:load_model(model_name=/Users/felixvemmer/Developer/court-judgement-prediction/cout-judgement-prediction/ml/best_pipeline, platform=None, authentication=None, verbose=True)
+2023-10-07 12:30:58,885:INFO:Initializing predict_model()
+2023-10-07 12:30:58,885:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x2823834c0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['application_date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=TargetEncoder(cols=['subject_matter'],
+                                                              handle_missing='return_nan'))),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x28209cf70>)
+2023-10-07 12:30:58,885:INFO:Checking exceptions
+2023-10-07 12:30:58,885:INFO:Preloading libraries
+2023-10-07 12:30:58,885:INFO:Set up data.
+2023-10-07 12:30:58,887:INFO:Set up index.
+2023-10-07 12:31:02,320:INFO:Initializing load_model()
+2023-10-07 12:31:02,320:INFO:load_model(model_name=/Users/felixvemmer/Developer/court-judgement-prediction/cout-judgement-prediction/ml/best_pipeline, platform=None, authentication=None, verbose=True)
+2023-10-07 12:31:02,326:INFO:Initializing predict_model()
+2023-10-07 12:31:02,326:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16bd43a30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['application_date'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['subject_matter'],
+                                    transformer=TargetEncoder(cols=['subject_matter'],
+                                                              handle_missing='return_nan'))),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x282149f70>)
+2023-10-07 12:31:02,326:INFO:Checking exceptions
+2023-10-07 12:31:02,326:INFO:Preloading libraries
+2023-10-07 12:31:02,327:INFO:Set up data.
+2023-10-07 12:31:02,328:INFO:Set up index.
