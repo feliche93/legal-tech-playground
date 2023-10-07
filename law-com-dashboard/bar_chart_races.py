@@ -31,7 +31,7 @@ def get_df(sql_query: str):
 def create_bar_chart_race(df: pd.DataFrame, column: str, title: str):
     df_pivot = df.pivot(index="Year", columns="firm", values=column)
 
-    bcr.bar_chart_race(  # type: ignore
+    bcr.bar_chart_race(
         df=df_pivot,
         filename=f"{column}_bar_chart_race.mp4",
         title=title,
@@ -43,12 +43,25 @@ def create_bar_chart_race(df: pd.DataFrame, column: str, title: str):
         steps_per_period=200,
         period_length=2000,  # Increase this number to make the animation slower
         figsize=(6, 3.5),
+        period_label={
+            "x": 0.99,
+            "y": 0.8,
+            "ha": "right",
+            "va": "center",
+            "fontsize": 8,
+            "color": "#000000",
+            "bbox": dict(facecolor="white", edgecolor="white", boxstyle="round,pad=0.5", alpha=0.6),
+        },  # Customize the period label
+        period_fmt="Year {x:.0f}",  # Format the period label as "Year 1985"
     )
 
 
 if __name__ == "__main__":
     # Get the data
     df_revenue = get_df("SELECT * FROM law_firm_data WHERE Revenue != 0")
+
+    df_revenue["Revenue"] = df_revenue["Revenue"] / 1000000
+
     df_headcount = get_df("SELECT * FROM law_firm_data WHERE Headcount != 0")
 
     # Create the bar chart races
